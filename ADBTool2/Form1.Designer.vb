@@ -31,7 +31,6 @@ Partial Class Form1
         Me.PullSerialNumBTN = New System.Windows.Forms.Button()
         Me.PullICCIDbtn = New System.Windows.Forms.Button()
         Me.ExportExcelBTN = New System.Windows.Forms.Button()
-        Me.ExportSQLbtn1 = New System.Windows.Forms.Button()
         Me.ExportTextBtn = New System.Windows.Forms.Button()
         Me.UpdaterBTN = New System.Windows.Forms.Button()
         Me.SerialNumLabel1 = New System.Windows.Forms.Label()
@@ -58,8 +57,8 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.installBtn1 = New System.Windows.Forms.Button()
         Me.PointADBbtn = New System.Windows.Forms.Button()
-        Me.StartADBbtn = New System.Windows.Forms.Button()
         Me.KillADBbtn = New System.Windows.Forms.Button()
+        Me.SuperReboot = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TopInfoBox
@@ -82,7 +81,7 @@ Partial Class Form1
         '
         'RestartADBbtn
         '
-        Me.RestartADBbtn.Location = New System.Drawing.Point(12, 230)
+        Me.RestartADBbtn.Location = New System.Drawing.Point(13, 230)
         Me.RestartADBbtn.Name = "RestartADBbtn"
         Me.RestartADBbtn.Size = New System.Drawing.Size(127, 23)
         Me.RestartADBbtn.TabIndex = 2
@@ -91,7 +90,7 @@ Partial Class Form1
         '
         'GetIMEIbtn
         '
-        Me.GetIMEIbtn.Location = New System.Drawing.Point(13, 260)
+        Me.GetIMEIbtn.Location = New System.Drawing.Point(13, 259)
         Me.GetIMEIbtn.Name = "GetIMEIbtn"
         Me.GetIMEIbtn.Size = New System.Drawing.Size(126, 23)
         Me.GetIMEIbtn.TabIndex = 3
@@ -100,7 +99,7 @@ Partial Class Form1
         '
         'PullMACbtn
         '
-        Me.PullMACbtn.Location = New System.Drawing.Point(13, 290)
+        Me.PullMACbtn.Location = New System.Drawing.Point(13, 288)
         Me.PullMACbtn.Name = "PullMACbtn"
         Me.PullMACbtn.Size = New System.Drawing.Size(126, 23)
         Me.PullMACbtn.TabIndex = 4
@@ -109,7 +108,7 @@ Partial Class Form1
         '
         'PullSerialNumBTN
         '
-        Me.PullSerialNumBTN.Location = New System.Drawing.Point(13, 320)
+        Me.PullSerialNumBTN.Location = New System.Drawing.Point(14, 317)
         Me.PullSerialNumBTN.Name = "PullSerialNumBTN"
         Me.PullSerialNumBTN.Size = New System.Drawing.Size(126, 23)
         Me.PullSerialNumBTN.TabIndex = 5
@@ -118,7 +117,7 @@ Partial Class Form1
         '
         'PullICCIDbtn
         '
-        Me.PullICCIDbtn.Location = New System.Drawing.Point(13, 350)
+        Me.PullICCIDbtn.Location = New System.Drawing.Point(13, 346)
         Me.PullICCIDbtn.Name = "PullICCIDbtn"
         Me.PullICCIDbtn.Size = New System.Drawing.Size(126, 23)
         Me.PullICCIDbtn.TabIndex = 6
@@ -127,25 +126,16 @@ Partial Class Form1
         '
         'ExportExcelBTN
         '
-        Me.ExportExcelBTN.Location = New System.Drawing.Point(160, 202)
+        Me.ExportExcelBTN.Location = New System.Drawing.Point(160, 201)
         Me.ExportExcelBTN.Name = "ExportExcelBTN"
         Me.ExportExcelBTN.Size = New System.Drawing.Size(126, 23)
         Me.ExportExcelBTN.TabIndex = 7
         Me.ExportExcelBTN.Text = "Export To Excel"
         Me.ExportExcelBTN.UseVisualStyleBackColor = True
         '
-        'ExportSQLbtn1
-        '
-        Me.ExportSQLbtn1.Location = New System.Drawing.Point(160, 231)
-        Me.ExportSQLbtn1.Name = "ExportSQLbtn1"
-        Me.ExportSQLbtn1.Size = New System.Drawing.Size(126, 23)
-        Me.ExportSQLbtn1.TabIndex = 8
-        Me.ExportSQLbtn1.Text = "Export to SQL"
-        Me.ExportSQLbtn1.UseVisualStyleBackColor = True
-        '
         'ExportTextBtn
         '
-        Me.ExportTextBtn.Location = New System.Drawing.Point(160, 260)
+        Me.ExportTextBtn.Location = New System.Drawing.Point(160, 230)
         Me.ExportTextBtn.Name = "ExportTextBtn"
         Me.ExportTextBtn.Size = New System.Drawing.Size(126, 23)
         Me.ExportTextBtn.TabIndex = 9
@@ -267,7 +257,7 @@ Partial Class Form1
         '
         'RebootBtn1
         '
-        Me.RebootBtn1.Location = New System.Drawing.Point(160, 290)
+        Me.RebootBtn1.Location = New System.Drawing.Point(160, 259)
         Me.RebootBtn1.Name = "RebootBtn1"
         Me.RebootBtn1.Size = New System.Drawing.Size(126, 23)
         Me.RebootBtn1.TabIndex = 23
@@ -276,7 +266,7 @@ Partial Class Form1
         '
         'RebootFastBootBtn1
         '
-        Me.RebootFastBootBtn1.Location = New System.Drawing.Point(160, 320)
+        Me.RebootFastBootBtn1.Location = New System.Drawing.Point(160, 288)
         Me.RebootFastBootBtn1.Name = "RebootFastBootBtn1"
         Me.RebootFastBootBtn1.Size = New System.Drawing.Size(126, 23)
         Me.RebootFastBootBtn1.TabIndex = 24
@@ -321,7 +311,7 @@ Partial Class Form1
         '
         'RebootRecoveryBTN1
         '
-        Me.RebootRecoveryBTN1.Location = New System.Drawing.Point(160, 350)
+        Me.RebootRecoveryBTN1.Location = New System.Drawing.Point(160, 317)
         Me.RebootRecoveryBTN1.Name = "RebootRecoveryBTN1"
         Me.RebootRecoveryBTN1.Size = New System.Drawing.Size(126, 23)
         Me.RebootRecoveryBTN1.TabIndex = 29
@@ -366,38 +356,38 @@ Partial Class Form1
         '
         'PointADBbtn
         '
-        Me.PointADBbtn.Location = New System.Drawing.Point(13, 380)
+        Me.PointADBbtn.Location = New System.Drawing.Point(13, 375)
         Me.PointADBbtn.Name = "PointADBbtn"
-        Me.PointADBbtn.Size = New System.Drawing.Size(157, 23)
+        Me.PointADBbtn.Size = New System.Drawing.Size(148, 23)
         Me.PointADBbtn.TabIndex = 34
         Me.PointADBbtn.Text = "Set Different ADB Directory"
         Me.PointADBbtn.UseVisualStyleBackColor = True
         '
-        'StartADBbtn
-        '
-        Me.StartADBbtn.Location = New System.Drawing.Point(13, 410)
-        Me.StartADBbtn.Name = "StartADBbtn"
-        Me.StartADBbtn.Size = New System.Drawing.Size(75, 23)
-        Me.StartADBbtn.TabIndex = 35
-        Me.StartADBbtn.Text = "Start ADB"
-        Me.StartADBbtn.UseVisualStyleBackColor = True
-        '
         'KillADBbtn
         '
-        Me.KillADBbtn.Location = New System.Drawing.Point(95, 410)
+        Me.KillADBbtn.Location = New System.Drawing.Point(160, 346)
         Me.KillADBbtn.Name = "KillADBbtn"
-        Me.KillADBbtn.Size = New System.Drawing.Size(75, 23)
+        Me.KillADBbtn.Size = New System.Drawing.Size(126, 23)
         Me.KillADBbtn.TabIndex = 36
         Me.KillADBbtn.Text = "Kill ADB"
         Me.KillADBbtn.UseVisualStyleBackColor = True
+        '
+        'SuperReboot
+        '
+        Me.SuperReboot.Location = New System.Drawing.Point(177, 375)
+        Me.SuperReboot.Name = "SuperReboot"
+        Me.SuperReboot.Size = New System.Drawing.Size(109, 23)
+        Me.SuperReboot.TabIndex = 37
+        Me.SuperReboot.Text = "SuperReboot"
+        Me.SuperReboot.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(608, 442)
+        Me.Controls.Add(Me.SuperReboot)
         Me.Controls.Add(Me.KillADBbtn)
-        Me.Controls.Add(Me.StartADBbtn)
         Me.Controls.Add(Me.PointADBbtn)
         Me.Controls.Add(Me.installBtn1)
         Me.Controls.Add(Me.Label3)
@@ -424,7 +414,6 @@ Partial Class Form1
         Me.Controls.Add(Me.SerialNumLabel1)
         Me.Controls.Add(Me.UpdaterBTN)
         Me.Controls.Add(Me.ExportTextBtn)
-        Me.Controls.Add(Me.ExportSQLbtn1)
         Me.Controls.Add(Me.ExportExcelBTN)
         Me.Controls.Add(Me.PullICCIDbtn)
         Me.Controls.Add(Me.PullSerialNumBTN)
@@ -449,7 +438,6 @@ Partial Class Form1
     Friend WithEvents PullSerialNumBTN As Button
     Friend WithEvents PullICCIDbtn As Button
     Friend WithEvents ExportExcelBTN As Button
-    Friend WithEvents ExportSQLbtn1 As Button
     Friend WithEvents ExportTextBtn As Button
     Friend WithEvents UpdaterBTN As Button
     Friend WithEvents SerialNumLabel1 As Label
@@ -476,6 +464,6 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents installBtn1 As Button
     Friend WithEvents PointADBbtn As Button
-    Friend WithEvents StartADBbtn As Button
     Friend WithEvents KillADBbtn As Button
+    Friend WithEvents SuperReboot As Button
 End Class
